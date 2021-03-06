@@ -27,7 +27,7 @@ It's a json dataset and contains 202,372 records, each record has the following 
 }
 ```
 
-In this notebook we classify documents by category class, the categories in the dataset are:
+In this notebook we classify documents by category class, the 41 categories in the dataset are:
 
 ```
 ['CRIME' 'ENTERTAINMENT' 'WORLD NEWS' 'IMPACT' 'POLITICS' 'WEIRD NEWS'
@@ -47,9 +47,22 @@ I use a Small-BERT encoder (https://huggingface.co/google/bert_uncased_L-4_H-512
 * Dropout Layer
 * Output Layer
 
-**Optimizer**: AdamW
-**Loss**: CrossEntropy Loss
-**Optimizer Scheduler**: linear schedule with warmup (https://huggingface.co/transformers/main_classes/optimizer_schedules.html)
+
+## Hyperparameters
+
+
+* **Optimizer**: AdamW
+* **Learning Rate**: 2e-5
+* **Loss**: CrossEntropy Loss
+* **Optimizer Scheduler**: linear schedule with warmup (https://huggingface.co/transformers/main_classes/optimizer_schedules.html)
+* **Batch Size**: 32
+* **Test Batch Size**: 128
+* **Epochs**: 5
+* **Dropout**: 0.4
+
+
+
+
 
 
 ## Results
@@ -57,7 +70,18 @@ We use a few-shots learning approach with 5 epochs training. The results are the
 
 | Accuracy | F1-measure |
 | --- | ----------- |
-| 50% | 50% |
+| 66,89% | 56,75% |
+
+
+## Libraries
+
+* Transformers (Tranformer-based architectures)
+* PyTorch (Deep Learning Module)
+* Seaborn (Charts Visualization)
+* Sklearn (ML Library, I use it for Data manipulation)
+* Pandas (DataFrame and Data)
+* Numpy (Linear Algebra)
+
 
 
 ## Contributors
