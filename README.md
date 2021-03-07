@@ -70,7 +70,27 @@ We use a few-shots learning approach with 5 epochs training. The results are the
 
 | Accuracy | F1-measure |
 | --- | ----------- |
-| 66,89% | 56,75% |
+| 67,15% | 56,50% |
+
+
+## Testing
+
+Model usage examples:
+```
+News text: Can Inter Milan win the league this year?
+Category: SPORTS
+
+================================================
+
+News text: Trump and his strategy
+Category: POLITICS
+
+================================================
+
+News text: Milan fashion-week, this is the week!
+Category: STYLE
+```
+
 
 
 ## Libraries
