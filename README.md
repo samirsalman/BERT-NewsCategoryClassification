@@ -66,7 +66,7 @@ I use a Small-BERT encoder (https://huggingface.co/google/bert_uncased_L-4_H-512
 
 
 ## Results
-We use a few-shots learning approach with 5 epochs training. The results are the following:
+I trained the model with 5 epochs. The results are the following:
 
 | Accuracy | F1-measure |
 | --- | ----------- |
